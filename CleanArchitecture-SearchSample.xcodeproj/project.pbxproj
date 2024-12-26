@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A81303032D186D92008414D0 /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81303022D186D92008414D0 /* Usecase.swift */; };
 		A81303052D186DC5008414D0 /* EmptyLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81303042D186DC5008414D0 /* EmptyLocalDataSourceImpl.swift */; };
 		A813030B2D187487008414D0 /* SearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813030A2D187487008414D0 /* SearchQuery.swift */; };
 		A81303102D187D82008414D0 /* SearchedListViewModel+Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813030F2D187D82008414D0 /* SearchedListViewModel+Presentable.swift */; };
 		A81303122D187DA2008414D0 /* SearchedListViewModel+Interactorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81303112D187DA2008414D0 /* SearchedListViewModel+Interactorable.swift */; };
 		A81303192D1A4FFB008414D0 /* VideoSearchResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81303182D1A4FFB008414D0 /* VideoSearchResponseDTO.swift */; };
-		A813031B2D1A6002008414D0 /* FetchVideosUsecaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813031A2D1A6002008414D0 /* FetchVideosUsecaseImpl.swift */; };
+		A813031B2D1A6002008414D0 /* FetchVideosUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813031A2D1A6002008414D0 /* FetchVideosUsecase.swift */; };
 		A813033D2D1A6FEE008414D0 /* ActionEventEmitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813031C2D1A6FEE008414D0 /* ActionEventEmitable.swift */; };
 		A813033E2D1A6FEE008414D0 /* CollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813031E2D1A6FEE008414D0 /* CollectionViewAdapter.swift */; };
 		A813033F2D1A6FEE008414D0 /* CollectionViewAdapter+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813031F2D1A6FEE008414D0 /* CollectionViewAdapter+Event.swift */; };
@@ -61,7 +60,7 @@
 		A8BD75F32D18055D00EFE944 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A8BD75F22D18055D00EFE944 /* Then */; };
 		A8BD75F62D1805A000EFE944 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = A8BD75F52D1805A000EFE944 /* CombineMoya */; };
 		A8BD75F82D1805A000EFE944 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = A8BD75F72D1805A000EFE944 /* Moya */; };
-		A8BD76172D180EBA00EFE944 /* FetchImagesUsecaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD76162D180EBA00EFE944 /* FetchImagesUsecaseImpl.swift */; };
+		A8BD76172D180EBA00EFE944 /* FetchImagesUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD76162D180EBA00EFE944 /* FetchImagesUsecase.swift */; };
 		A8BD76212D18274000EFE944 /* KakaoSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD76202D18274000EFE944 /* KakaoSearchAPI.swift */; };
 		A8BD76242D18290C00EFE944 /* SearchRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD76232D18290C00EFE944 /* SearchRequestDTO.swift */; };
 		A8BD76262D182C6B00EFE944 /* ImageSearchResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD76252D182C6B00EFE944 /* ImageSearchResponseDTO.swift */; };
@@ -90,13 +89,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A81303022D186D92008414D0 /* Usecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usecase.swift; sourceTree = "<group>"; };
 		A81303042D186DC5008414D0 /* EmptyLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyLocalDataSourceImpl.swift; sourceTree = "<group>"; };
 		A813030A2D187487008414D0 /* SearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQuery.swift; sourceTree = "<group>"; };
 		A813030F2D187D82008414D0 /* SearchedListViewModel+Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchedListViewModel+Presentable.swift"; sourceTree = "<group>"; };
 		A81303112D187DA2008414D0 /* SearchedListViewModel+Interactorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchedListViewModel+Interactorable.swift"; sourceTree = "<group>"; };
 		A81303182D1A4FFB008414D0 /* VideoSearchResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSearchResponseDTO.swift; sourceTree = "<group>"; };
-		A813031A2D1A6002008414D0 /* FetchVideosUsecaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideosUsecaseImpl.swift; sourceTree = "<group>"; };
+		A813031A2D1A6002008414D0 /* FetchVideosUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideosUsecase.swift; sourceTree = "<group>"; };
 		A813031C2D1A6FEE008414D0 /* ActionEventEmitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionEventEmitable.swift; sourceTree = "<group>"; };
 		A813031E2D1A6FEE008414D0 /* CollectionViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewAdapter.swift; sourceTree = "<group>"; };
 		A813031F2D1A6FEE008414D0 /* CollectionViewAdapter+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionViewAdapter+Event.swift"; sourceTree = "<group>"; };
@@ -141,7 +139,7 @@
 		A8BD75D22D18005700EFE944 /* CleanArchitecture_SearchSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitecture_SearchSampleUITests.swift; sourceTree = "<group>"; };
 		A8BD75D42D18005700EFE944 /* CleanArchitecture_SearchSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitecture_SearchSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A8BD75E72D18051F00EFE944 /* SearchRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryImpl.swift; sourceTree = "<group>"; };
-		A8BD76162D180EBA00EFE944 /* FetchImagesUsecaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImagesUsecaseImpl.swift; sourceTree = "<group>"; };
+		A8BD76162D180EBA00EFE944 /* FetchImagesUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImagesUsecase.swift; sourceTree = "<group>"; };
 		A8BD76202D18274000EFE944 /* KakaoSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSearchAPI.swift; sourceTree = "<group>"; };
 		A8BD76232D18290C00EFE944 /* SearchRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestDTO.swift; sourceTree = "<group>"; };
 		A8BD76252D182C6B00EFE944 /* ImageSearchResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchResponseDTO.swift; sourceTree = "<group>"; };
@@ -226,8 +224,8 @@
 		A81303162D188E02008414D0 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				A8BD76162D180EBA00EFE944 /* FetchImagesUsecaseImpl.swift */,
-				A813031A2D1A6002008414D0 /* FetchVideosUsecaseImpl.swift */,
+				A8BD76162D180EBA00EFE944 /* FetchImagesUsecase.swift */,
+				A813031A2D1A6002008414D0 /* FetchVideosUsecase.swift */,
 				A81303642D1A7F84008414D0 /* UpdateSearchQueryUsecase.swift */,
 			);
 			path = Search;
@@ -546,7 +544,6 @@
 		A8BD76152D180EAF00EFE944 /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
-				A8BD76322D186BFD00EFE944 /* Protocol */,
 				A81303162D188E02008414D0 /* Search */,
 			);
 			path = Usecases;
@@ -584,14 +581,6 @@
 				A8BD761A2D1822BC00EFE944 /* ResponseDTO */,
 			);
 			path = DTO;
-			sourceTree = "<group>";
-		};
-		A8BD76322D186BFD00EFE944 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				A81303022D186D92008414D0 /* Usecase.swift */,
-			);
-			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -742,7 +731,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A813031B2D1A6002008414D0 /* FetchVideosUsecaseImpl.swift in Sources */,
+				A813031B2D1A6002008414D0 /* FetchVideosUsecase.swift in Sources */,
 				A8BD762B2D1831FE00EFE944 /* KakaoSearchRemoteDataSourceImpl.swift in Sources */,
 				A813035C2D1A719F008414D0 /* ContentViewController.swift in Sources */,
 				A8BD76282D182F8600EFE944 /* KakaoSearchRemoteDataSource.swift in Sources */,
@@ -763,7 +752,6 @@
 				A813034E2D1A6FEE008414D0 /* SectionModel.swift in Sources */,
 				A81303412D1A6FEE008414D0 /* EmptySpacingComponent.swift in Sources */,
 				A81303052D186DC5008414D0 /* EmptyLocalDataSourceImpl.swift in Sources */,
-				A81303032D186D92008414D0 /* Usecase.swift in Sources */,
 				A88C1A032D1D058000983575 /* AppDIContainer.swift in Sources */,
 				A813033D2D1A6FEE008414D0 /* ActionEventEmitable.swift in Sources */,
 				A8BD76242D18290C00EFE944 /* SearchRequestDTO.swift in Sources */,
@@ -786,7 +774,7 @@
 				A813034A2D1A6FEE008414D0 /* Component.swift in Sources */,
 				A8BD75E82D18051F00EFE944 /* SearchRepositoryImpl.swift in Sources */,
 				A81303422D1A6FEE008414D0 /* DividerComponent.swift in Sources */,
-				A8BD76172D180EBA00EFE944 /* FetchImagesUsecaseImpl.swift in Sources */,
+				A8BD76172D180EBA00EFE944 /* FetchImagesUsecase.swift in Sources */,
 				A81303512D1A6FEF008414D0 /* ItemModelBindable.swift in Sources */,
 				A81303562D1A7165008414D0 /* VideoComponent.swift in Sources */,
 				A813035B2D1A719F008414D0 /* BaseView.swift in Sources */,
