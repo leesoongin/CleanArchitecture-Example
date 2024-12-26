@@ -387,6 +387,7 @@
 		A8BD75A52D18005300EFE944 = {
 			isa = PBXGroup;
 			children = (
+				A88C1A062D1D11AE00983575 /* .gitignore */,
 				A8BD75B02D18005300EFE944 /* CleanArchitecture-SearchSample */,
 				A8BD75C72D18005700EFE944 /* CleanArchitecture-SearchSampleTests */,
 				A8BD75D12D18005700EFE944 /* CleanArchitecture-SearchSampleUITests */,
@@ -410,7 +411,6 @@
 				A8BD75BF2D18005600EFE944 /* Info.plist */,
 				A8BD75E22D18007000EFE944 /* Resources */,
 				A8BD75E32D18008600EFE944 /* Sources */,
-				A88C1A062D1D11AE00983575 /* .gitignore */,
 			);
 			path = "CleanArchitecture-SearchSample";
 			sourceTree = "<group>";
