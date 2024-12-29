@@ -4,4 +4,41 @@
    <FileRef
       location = "group:SearchSample.xcodeproj">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "Dependencies">
+      <FileRef
+         location = "group:.build/tuist-derived/Alamofire/Alamofire.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:.build/tuist-derived/CombineCocoa/CombineCocoa.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:.build/tuist-derived/CwlCatchException/CwlCatchException.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:.build/tuist-derived/CwlPreconditionTesting/CwlPreconditionTesting.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:.build/tuist-derived/Kingfisher/Kingfisher.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:.build/tuist-derived/Moya/Moya.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:.build/tuist-derived/Nimble/Nimble.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:.build/tuist-derived/Quick/Quick.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:.build/tuist-derived/SnapKit/SnapKit.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:.build/tuist-derived/Swinject/Swinject.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:.build/tuist-derived/Then/Then.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
