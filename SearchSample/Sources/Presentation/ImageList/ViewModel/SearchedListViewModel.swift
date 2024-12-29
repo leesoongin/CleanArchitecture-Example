@@ -27,7 +27,7 @@ final class SearchedListViewModel {
     let imageFetchUsecase: FetchImagesUsecase
     let videoFetchUsecase: FetchVideosUsecase
     
-    @Published private var isEnd: Bool = true
+    @Published var isEnd: Bool = true
     
     init(
         imageFetchUsecase: FetchImagesUsecase,
@@ -42,91 +42,32 @@ final class SearchedListViewModel {
     let searchedImageValues = CurrentValueSubject<[Image], Never>([])
     let searchedVideoValues = CurrentValueSubject<[Video], Never>([])
     let sectionSubject = CurrentValueSubject<[SectionModelType], Never>([])
+    let errorSubject = PassthroughSubject<Error, Never>()
     
     func bind() {
         imageFetchUsecase.imagesPublisher
-            .compactMap { [weak self] images -> [SectionModelType]? in
-                self?.searchedImageValues.value = images
-                
-                return self?.createImageSections(
-                    with: images,
-                    isEnd: self?.isEnd ?? true
-                )
-            }
-            .sink { [weak self] sections in
-                self?.sectionSubject.send(sections)
+            .sink { [weak self] images in
+                self?.present(with: .imageList(images: images))
             }
             .store(in: &cancellables)
         
         imageFetchUsecase.isEndPublisher
             .assign(to: &$isEnd)
         
-        videoFetchUsecase.videosPublisher
-            .compactMap { [weak self] videos -> [SectionModelType]? in
-                self?.searchedVideoValues.value = videos
-                
-                return self?.createVideoSections(
-                    with: videos,
-                    isEnd: self?.isEnd ?? false
-                )
+        imageFetchUsecase.errorPublisher
+            .sink { [weak self] error in
+                self?.present(with: .error(error: error))
             }
-            .sink { [weak self] sections in
-                self?.sectionSubject.send(sections)
+            .store(in: &cancellables)
+        
+        
+        videoFetchUsecase.videosPublisher
+            .sink { [weak self] videos in
+                self?.present(with: .videoList(videos: videos))
             }
             .store(in: &cancellables)
         
         videoFetchUsecase.isEndPublisher
             .assign(to: &$isEnd)
-    }
-}
-
-//MARK: - Domain To SectionModel
-extension SearchedListViewModel {
-    func createImageSections(
-        with images: [Image],
-        isEnd: Bool
-    ) -> [SectionModelType] {
-        let components = images.map {
-            ImageComponent(
-                identifier: $0.id,
-                thumbnailURL: $0.thumbnailURL
-            )
-        }
-        
-        let indicatorComponent = CommonIndicatorComponent(
-            identifier: "indicator_component",
-            isLast: false
-        )
-        
-        let section = SectionModel(
-            identifier: "image_section",
-            itemModels: components + [indicatorComponent]
-        )
-        
-        return [section]
-    }
-    
-    func createVideoSections(
-        with videos: [Video],
-        isEnd: Bool
-    ) -> [SectionModelType] {
-        let components = videos.map {
-            VideoComponent(
-                identifier: $0.id,
-                thumbnailURL: $0.thumbnailURL
-            )
-        }
-        
-        let indicatorComponent = CommonIndicatorComponent(
-            identifier: "indicator_component",
-            isLast: isEnd
-        )
-        
-        let section = SectionModel(
-            identifier: "video_section",
-            itemModels: components + [indicatorComponent]
-        )
-        
-        return [section]
     }
 }
