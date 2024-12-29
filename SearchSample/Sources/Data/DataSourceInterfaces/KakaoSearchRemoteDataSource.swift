@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-protocol KakaoSearchRemoteDataSource {
+public protocol KakaoSearchRemoteDataSource {
     func fetchImages(
         query: String,
         page: Int,

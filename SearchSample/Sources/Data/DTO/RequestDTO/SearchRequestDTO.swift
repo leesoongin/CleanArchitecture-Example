@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SearchRequestDTO: Encodable {
+public struct SearchRequestDTO: Encodable {
     let query: String
     let page: Int
     let size: Int
@@ -20,12 +20,12 @@ struct SearchRequestDTO: Encodable {
         case sort
     }
     
-    enum Sort: String {
+    public enum Sort: String {
         case accuracy // 정확도순
         case recency // 최신순
     }
     
-    func encode(to encoder: any Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(query, forKey: .query)

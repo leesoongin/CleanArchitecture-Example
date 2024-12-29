@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct Image: Identifiable {
-    let id: String
+public struct Image: Identifiable {
+    public let id: String
     let thumbnailURL: String
     let imageURL: String
     let date: String
 }
 
-struct Video: Identifiable {
-    let id: String
+public struct Video: Identifiable {
+    public let id: String
     let title: String
     let thumbnailURL: String
     let url: String

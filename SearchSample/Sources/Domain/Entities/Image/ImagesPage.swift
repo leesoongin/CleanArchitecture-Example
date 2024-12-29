@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct ImagesPage {
+public struct ImagesPage {
     let totalCount: Int
     let totalPages: Int
     let isEnd: Bool
     let images: [Image]
 }
 
-struct VideosPage {
+public struct VideosPage {
     let totalCount: Int
     let totalPages: Int
     let isEnd: Bool
